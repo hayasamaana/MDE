@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/BehaviourOO/src" modelPluginID="BehaviourOO" modelName="Behaviour"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>behaviour.ecore</foreignModel>
+  <genPackages prefix="Behaviour" disposableProviderFactory="true" ecorePackage="behaviour.ecore#/">
+    <genClasses ecoreClass="behaviour.ecore#//Behaviour">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//Behaviour/functions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference behaviour.ecore#//Behaviour/entryFunction"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//Function/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//Function/functionBody"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="behaviour.ecore#//Statement"/>
+    <genClasses ecoreClass="behaviour.ecore#//CondionalStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//CondionalStatement/ifStatements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//CondionalStatement/elseStatements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//CondionalStatement/ifExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//LoopStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//LoopStatement/loopExpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//LoopStatement/loopBodyStatements"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//AssignmentStatement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//AssignmentStatement/varName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//AssignmentStatement/assignExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//DeclarationStatement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//DeclarationStatement/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//DeclarationStatement/varType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//DeclarationStatement/initialExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//ReturnStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//ReturnStatement/returnExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//CallFunctionStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//CallFunctionStatement/arguments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//CallFunctionStatement/nameFunc"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//TryCatchStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//TryCatchStatement/tryStatements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//TryCatchStatement/catchStatements"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//ExceptionStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//ExceptionStatement/throwsExpression"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="behaviour.ecore#//Expression"/>
+    <genClasses ecoreClass="behaviour.ecore#//Literal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//Literal/vlaue"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//Variable/varName"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//FunctionCall">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute behaviour.ecore#//FunctionCall/funcName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//FunctionCall/arguments"/>
+    </genClasses>
+    <genClasses ecoreClass="behaviour.ecore#//ReadLine"/>
+    <genClasses image="false" ecoreClass="behaviour.ecore#//BinaryExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//BinaryExpression/leftSideExpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference behaviour.ecore#//BinaryExpression/rightSideExpression"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="behaviour.ecore#//ArithmeticOperation"/>
+    <genClasses image="false" ecoreClass="behaviour.ecore#//ComparisonOperator"/>
+    <genClasses ecoreClass="behaviour.ecore#//Plus"/>
+    <genClasses ecoreClass="behaviour.ecore#//Equals"/>
+  </genPackages>
+</genmodel:GenModel>

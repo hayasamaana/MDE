@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structural:Program
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:structural="http://www.najah.org/structural"
+    xsi:schemaLocation="http://www.najah.org/structural structural.ecore">
+  <classes name="Teachre">
+    <methods
+        name="addTeachre"
+        returnType="BOOLEAN"
+        belongToClass="//@classes.0"
+        varibales="//@classes.0/@variables.0"/>
+    <variables
+        name="age"/>
+  </classes>
+</structural:Program>
