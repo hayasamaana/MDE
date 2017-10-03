@@ -33,7 +33,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structural.ecore#//Method/returnType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structural.ecore#//Method/accessModifiers"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference structural.ecore#//Method/belongToClass"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference structural.ecore#//Method/varibales"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference structural.ecore#//Method/varibales"/>
     </genClasses>
     <genClasses ecoreClass="structural.ecore#//Variable">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structural.ecore#//Variable/name"/>

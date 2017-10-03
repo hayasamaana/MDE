@@ -26,7 +26,7 @@ public enum AccessMod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PUBLIC(0, "PUBLIC", "PUBLIC"),
+	PUBLIC(0, "PUBLIC", "public"),
 
 	/**
 	 * The '<em><b>PRIVATE</b></em>' literal object.
@@ -36,7 +36,7 @@ public enum AccessMod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PRIVATE(1, "PRIVATE", "PRIVATE"),
+	PRIVATE(1, "PRIVATE", "private"),
 
 	/**
 	 * The '<em><b>PROTECTED</b></em>' literal object.
@@ -46,7 +46,7 @@ public enum AccessMod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PROTECTED(2, "PROTECTED", "PROTECTED");
+	PROTECTED(2, "PROTECTED", "protected");
 
 	/**
 	 * The '<em><b>PUBLIC</b></em>' literal value.
@@ -57,7 +57,7 @@ public enum AccessMod implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PUBLIC
-	 * @model
+	 * @model literal="public"
 	 * @generated
 	 * @ordered
 	 */
@@ -72,7 +72,7 @@ public enum AccessMod implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PRIVATE
-	 * @model
+	 * @model literal="private"
 	 * @generated
 	 * @ordered
 	 */
@@ -87,7 +87,7 @@ public enum AccessMod implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PROTECTED
-	 * @model
+	 * @model literal="protected"
 	 * @generated
 	 * @ordered
 	 */

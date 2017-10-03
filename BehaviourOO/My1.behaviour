@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behaviour:Behaviour xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:behaviour="http://www.najah.org/behaviour" entryFunction="//@functions.0">
+  <functions name="Main"/>
+</behaviour:Behaviour>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated structural -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="structural.presentation.StructuralModelWizardID"
+            name="%_UI_StructuralModelWizard_label"
+            class="structural.presentation.StructuralModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/StructuralModelFile.gif">
+         <description>%_UI_StructuralModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated structural -->
+      <editor
+            id="structural.presentation.StructuralEditorID"
+            name="%_UI_StructuralEditor_label"
+            icon="icons/full/obj16/StructuralModelFile.gif"
+            extensions="structural"
+            class="structural.presentation.StructuralEditor"
+            contributorClass="structural.presentation.StructuralActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

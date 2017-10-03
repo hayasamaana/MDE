@@ -6,6 +6,7 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -14,8 +15,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
-
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import structural.AccessMod;
 import structural.DataTypes;
 import structural.Method;
@@ -111,7 +112,7 @@ public class MethodImpl extends MinimalEObjectImpl.Container implements Method {
 	protected structural.Class belongToClass;
 
 	/**
-	 * The cached value of the '{@link #getVaribales() <em>Varibales</em>}' reference list.
+	 * The cached value of the '{@link #getVaribales() <em>Varibales</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getVaribales()
@@ -247,9 +248,23 @@ public class MethodImpl extends MinimalEObjectImpl.Container implements Method {
 	 */
 	public EList<Variable> getVaribales() {
 		if (varibales == null) {
-			varibales = new EObjectResolvingEList<Variable>(Variable.class, this, StructuralPackage.METHOD__VARIBALES);
+			varibales = new EObjectContainmentEList<Variable>(Variable.class, this, StructuralPackage.METHOD__VARIBALES);
 		}
 		return varibales;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case StructuralPackage.METHOD__VARIBALES:
+				return ((InternalEList<?>)getVaribales()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

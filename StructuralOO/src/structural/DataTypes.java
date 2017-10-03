@@ -26,7 +26,7 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTEGER(0, "INTEGER", "INTEGER"),
+	INTEGER(0, "INTEGER", "int"),
 
 	/**
 	 * The '<em><b>FLOAT</b></em>' literal object.
@@ -36,7 +36,7 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	FLOAT(1, "FLOAT", "FLOAT"),
+	FLOAT(1, "FLOAT", "float"),
 
 	/**
 	 * The '<em><b>DOUBLE</b></em>' literal object.
@@ -46,7 +46,7 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DOUBLE(2, "DOUBLE", "DOUBLE"),
+	DOUBLE(2, "DOUBLE", "double"),
 
 	/**
 	 * The '<em><b>CHAR</b></em>' literal object.
@@ -56,7 +56,7 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CHAR(3, "CHAR", "CHAR"),
+	CHAR(3, "CHAR", "char"),
 
 	/**
 	 * The '<em><b>STRING</b></em>' literal object.
@@ -66,7 +66,7 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	STRING(4, "STRING", "STRING"),
+	STRING(4, "STRING", "string"),
 
 	/**
 	 * The '<em><b>BOOLEAN</b></em>' literal object.
@@ -76,7 +76,7 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	BOOLEAN(5, "BOOLEAN", "BOOLEAN");
+	BOOLEAN(5, "BOOLEAN", "boolean");
 
 	/**
 	 * The '<em><b>INTEGER</b></em>' literal value.
@@ -87,7 +87,7 @@ public enum DataTypes implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #INTEGER
-	 * @model
+	 * @model literal="int"
 	 * @generated
 	 * @ordered
 	 */
@@ -102,7 +102,7 @@ public enum DataTypes implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #FLOAT
-	 * @model
+	 * @model literal="float"
 	 * @generated
 	 * @ordered
 	 */
@@ -117,7 +117,7 @@ public enum DataTypes implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #DOUBLE
-	 * @model
+	 * @model literal="double"
 	 * @generated
 	 * @ordered
 	 */
@@ -132,7 +132,7 @@ public enum DataTypes implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #CHAR
-	 * @model
+	 * @model literal="char"
 	 * @generated
 	 * @ordered
 	 */
@@ -147,7 +147,7 @@ public enum DataTypes implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #STRING
-	 * @model
+	 * @model literal="string"
 	 * @generated
 	 * @ordered
 	 */
@@ -162,7 +162,7 @@ public enum DataTypes implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #BOOLEAN
-	 * @model
+	 * @model literal="boolean"
 	 * @generated
 	 * @ordered
 	 */

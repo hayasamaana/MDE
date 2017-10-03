@@ -205,7 +205,7 @@ public interface StructuralPackage extends EPackage {
 	int METHOD__BELONG_TO_CLASS = 3;
 
 	/**
-	 * The feature id for the '<em><b>Varibales</b></em>' reference list.
+	 * The feature id for the '<em><b>Varibales</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -437,10 +437,10 @@ public interface StructuralPackage extends EPackage {
 	EReference getMethod_BelongToClass();
 
 	/**
-	 * Returns the meta object for the reference list '{@link structural.Method#getVaribales <em>Varibales</em>}'.
+	 * Returns the meta object for the containment reference list '{@link structural.Method#getVaribales <em>Varibales</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Varibales</em>'.
+	 * @return the meta object for the containment reference list '<em>Varibales</em>'.
 	 * @see structural.Method#getVaribales()
 	 * @see #getMethod()
 	 * @generated
@@ -636,7 +636,7 @@ public interface StructuralPackage extends EPackage {
 		EReference METHOD__BELONG_TO_CLASS = eINSTANCE.getMethod_BelongToClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Varibales</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Varibales</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

@@ -138,7 +138,7 @@ public interface Method extends EObject {
 	void setBelongToClass(structural.Class value);
 
 	/**
-	 * Returns the value of the '<em><b>Varibales</b></em>' reference list.
+	 * Returns the value of the '<em><b>Varibales</b></em>' containment reference list.
 	 * The list contents are of type {@link structural.Variable}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -146,9 +146,9 @@ public interface Method extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Varibales</em>' reference list.
+	 * @return the value of the '<em>Varibales</em>' containment reference list.
 	 * @see structural.StructuralPackage#getMethod_Varibales()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Variable> getVaribales();
