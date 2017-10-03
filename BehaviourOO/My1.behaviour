@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<behaviour:Behaviour xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:behaviour="http://www.najah.org/behaviour" entryFunction="//@functions.0">
-  <functions name="Main"/>
+<behaviour:Behaviour xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviour="http://www.najah.org/behaviour" entryFunction="//@functions.0">
+  <functions name="Teacher.main">
+    <functionBody xsi:type="behaviour:ReturnStatement">
+      <returnExpression xsi:type="behaviour:Literal" vlaue="15"/>
+    </functionBody>
+  </functions>
+  <functions name="Util.func1">
+    <functionBody xsi:type="behaviour:ReturnStatement">
+      <returnExpression xsi:type="behaviour:Literal" vlaue="35"/>
+    </functionBody>
+  </functions>
 </behaviour:Behaviour>

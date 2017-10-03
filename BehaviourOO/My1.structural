@@ -2,7 +2,13 @@
 <structural:Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:structural="http://www.najah.org/structural" mainMethod="//@classes.0/@methods.0">
   <classes name="Teacher">
     <methods name="main" belongToClass="//@classes.0"/>
-    <methods name="foo" belongToClass="//@classes.0"/>
     <variables name="i"/>
+  </classes>
+  <classes name="Util">
+    <methods name="func1" accessModifiers="private" belongToClass="//@classes.1">
+      <varibales name="a"/>
+      <varibales name="b" type="char"/>
+    </methods>
+    <variables name="n" type="float"/>
   </classes>
 </structural:Program>
