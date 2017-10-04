@@ -149,7 +149,7 @@ class ToJava  extends ToAnyLanguage{
 	def String genCode(ReturnStatement ret) {
 		
 		var expr= ret.returnExpression;
-		'''«expr.genCode»'''
+		''' return «expr.genCode»'''
 		
 		
 	}
