@@ -14,6 +14,54 @@
       <loopBodyStatements xsi:type="behaviour:ReturnStatement">
         <returnExpression xsi:type="behaviour:Literal" vlaue="23"/>
       </loopBodyStatements>
+      <loopBodyStatements xsi:type="behaviour:AssignmentStatement" varName="w">
+        <assignExpression xsi:type="behaviour:Plus">
+          <leftSideExpression xsi:type="behaviour:Variable" varName="m"/>
+          <rightSideExpression xsi:type="behaviour:FunctionCall" funcName="printALL">
+            <arguments xsi:type="behaviour:Variable" varName="q"/>
+          </rightSideExpression>
+        </assignExpression>
+      </loopBodyStatements>
+      <loopBodyStatements xsi:type="behaviour:DeclarationStatement" varName="t" varType="float">
+        <initialExpression xsi:type="behaviour:Equals">
+          <leftSideExpression xsi:type="behaviour:Plus">
+            <leftSideExpression xsi:type="behaviour:Literal" vlaue="6"/>
+            <rightSideExpression xsi:type="behaviour:Variable" varName="7"/>
+          </leftSideExpression>
+          <rightSideExpression xsi:type="behaviour:Literal" vlaue="455"/>
+        </initialExpression>
+      </loopBodyStatements>
+      <loopBodyStatements xsi:type="behaviour:CondionalStatement">
+        <ifStatements xsi:type="behaviour:AssignmentStatement" varName="age">
+          <assignExpression xsi:type="behaviour:Literal" vlaue="23"/>
+        </ifStatements>
+        <elseStatements xsi:type="behaviour:DeclarationStatement" varName="address" varType="char">
+          <initialExpression xsi:type="behaviour:Literal" vlaue="15"/>
+        </elseStatements>
+        <ifExpression xsi:type="behaviour:Plus">
+          <leftSideExpression xsi:type="behaviour:Literal" vlaue="6"/>
+          <rightSideExpression xsi:type="behaviour:Literal" vlaue="9"/>
+        </ifExpression>
+      </loopBodyStatements>
+      <loopBodyStatements xsi:type="behaviour:TryCatchStatement">
+        <tryStatements xsi:type="behaviour:DeclarationStatement" varName="a" varType="int">
+          <initialExpression xsi:type="behaviour:Variable" varName="tt"/>
+        </tryStatements>
+        <catchStatements xsi:type="behaviour:ExceptionStatement">
+          <throwsExpression xsi:type="behaviour:Variable" varName="address"/>
+        </catchStatements>
+      </loopBodyStatements>
+    </functionBody>
+    <functionBody xsi:type="behaviour:WriteLineStatement" nameFunc="temp">
+      <arguments xsi:type="behaviour:Literal" vlaue="34"/>
+      <arguments xsi:type="behaviour:Variable" varName="x"/>
+    </functionBody>
+    <functionBody xsi:type="behaviour:ReadLineStatement" nameFunc="readfunc">
+      <arguments xsi:type="behaviour:Variable" varName="w"/>
+    </functionBody>
+    <functionBody xsi:type="behaviour:CallFunctionStatement" nameFunc="test">
+      <arguments xsi:type="behaviour:Variable" varName="ac"/>
+      <arguments xsi:type="behaviour:Literal" vlaue="ws"/>
     </functionBody>
   </functions>
 </behaviour:Behaviour>

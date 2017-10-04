@@ -9,6 +9,7 @@
       <varibales name="a"/>
       <varibales name="b" type="char"/>
     </methods>
+    <methods name="func2" belongToClass="//@classes.1"/>
     <variables name="n" type="float"/>
   </classes>
 </structural:Program>
