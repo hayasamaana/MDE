@@ -215,6 +215,22 @@ public class BehaviourSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case BehaviourPackage.WRITE_LINE_STATEMENT: {
+				WriteLineStatement writeLineStatement = (WriteLineStatement)theEObject;
+				T result = caseWriteLineStatement(writeLineStatement);
+				if (result == null) result = caseCallFunctionStatement(writeLineStatement);
+				if (result == null) result = caseStatement(writeLineStatement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BehaviourPackage.READ_LINE_STATEMENT: {
+				ReadLineStatement readLineStatement = (ReadLineStatement)theEObject;
+				T result = caseReadLineStatement(readLineStatement);
+				if (result == null) result = caseCallFunctionStatement(readLineStatement);
+				if (result == null) result = caseStatement(readLineStatement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -531,6 +547,36 @@ public class BehaviourSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEquals(Equals object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Write Line Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Write Line Statement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWriteLineStatement(WriteLineStatement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Read Line Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Read Line Statement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReadLineStatement(ReadLineStatement object) {
 		return null;
 	}
 

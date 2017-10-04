@@ -440,6 +440,52 @@ public class BehaviourItemProviderAdapterFactory extends BehaviourAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link behaviour.WriteLineStatement} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected WriteLineStatementItemProvider writeLineStatementItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link behaviour.WriteLineStatement}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createWriteLineStatementAdapter() {
+		if (writeLineStatementItemProvider == null) {
+			writeLineStatementItemProvider = new WriteLineStatementItemProvider(this);
+		}
+
+		return writeLineStatementItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link behaviour.ReadLineStatement} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ReadLineStatementItemProvider readLineStatementItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link behaviour.ReadLineStatement}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createReadLineStatementAdapter() {
+		if (readLineStatementItemProvider == null) {
+			readLineStatementItemProvider = new ReadLineStatementItemProvider(this);
+		}
+
+		return readLineStatementItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -554,6 +600,8 @@ public class BehaviourItemProviderAdapterFactory extends BehaviourAdapterFactory
 		if (readLineItemProvider != null) readLineItemProvider.dispose();
 		if (plusItemProvider != null) plusItemProvider.dispose();
 		if (equalsItemProvider != null) equalsItemProvider.dispose();
+		if (writeLineStatementItemProvider != null) writeLineStatementItemProvider.dispose();
+		if (readLineStatementItemProvider != null) readLineStatementItemProvider.dispose();
 	}
 
 }

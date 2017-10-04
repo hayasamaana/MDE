@@ -166,6 +166,24 @@ public interface BehaviourFactory extends EFactory {
 	Equals createEquals();
 
 	/**
+	 * Returns a new object of class '<em>Write Line Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Write Line Statement</em>'.
+	 * @generated
+	 */
+	WriteLineStatement createWriteLineStatement();
+
+	/**
+	 * Returns a new object of class '<em>Read Line Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Read Line Statement</em>'.
+	 * @generated
+	 */
+	ReadLineStatement createReadLineStatement();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

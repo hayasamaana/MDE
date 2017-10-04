@@ -952,6 +952,99 @@ public interface BehaviourPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link behaviour.impl.WriteLineStatementImpl <em>Write Line Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see behaviour.impl.WriteLineStatementImpl
+	 * @see behaviour.impl.BehaviourPackageImpl#getWriteLineStatement()
+	 * @generated
+	 */
+	int WRITE_LINE_STATEMENT = 21;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WRITE_LINE_STATEMENT__ARGUMENTS = CALL_FUNCTION_STATEMENT__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Name Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WRITE_LINE_STATEMENT__NAME_FUNC = CALL_FUNCTION_STATEMENT__NAME_FUNC;
+
+	/**
+	 * The number of structural features of the '<em>Write Line Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WRITE_LINE_STATEMENT_FEATURE_COUNT = CALL_FUNCTION_STATEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Write Line Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WRITE_LINE_STATEMENT_OPERATION_COUNT = CALL_FUNCTION_STATEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link behaviour.impl.ReadLineStatementImpl <em>Read Line Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see behaviour.impl.ReadLineStatementImpl
+	 * @see behaviour.impl.BehaviourPackageImpl#getReadLineStatement()
+	 * @generated
+	 */
+	int READ_LINE_STATEMENT = 22;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int READ_LINE_STATEMENT__ARGUMENTS = CALL_FUNCTION_STATEMENT__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Name Func</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int READ_LINE_STATEMENT__NAME_FUNC = CALL_FUNCTION_STATEMENT__NAME_FUNC;
+
+	/**
+	 * The number of structural features of the '<em>Read Line Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int READ_LINE_STATEMENT_FEATURE_COUNT = CALL_FUNCTION_STATEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Read Line Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int READ_LINE_STATEMENT_OPERATION_COUNT = CALL_FUNCTION_STATEMENT_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link behaviour.Behaviour <em>Behaviour</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1448,6 +1541,26 @@ public interface BehaviourPackage extends EPackage {
 	EClass getEquals();
 
 	/**
+	 * Returns the meta object for class '{@link behaviour.WriteLineStatement <em>Write Line Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Write Line Statement</em>'.
+	 * @see behaviour.WriteLineStatement
+	 * @generated
+	 */
+	EClass getWriteLineStatement();
+
+	/**
+	 * Returns the meta object for class '{@link behaviour.ReadLineStatement <em>Read Line Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Read Line Statement</em>'.
+	 * @see behaviour.ReadLineStatement
+	 * @generated
+	 */
+	EClass getReadLineStatement();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1887,6 +2000,26 @@ public interface BehaviourPackage extends EPackage {
 		 * @generated
 		 */
 		EClass EQUALS = eINSTANCE.getEquals();
+
+		/**
+		 * The meta object literal for the '{@link behaviour.impl.WriteLineStatementImpl <em>Write Line Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see behaviour.impl.WriteLineStatementImpl
+		 * @see behaviour.impl.BehaviourPackageImpl#getWriteLineStatement()
+		 * @generated
+		 */
+		EClass WRITE_LINE_STATEMENT = eINSTANCE.getWriteLineStatement();
+
+		/**
+		 * The meta object literal for the '{@link behaviour.impl.ReadLineStatementImpl <em>Read Line Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see behaviour.impl.ReadLineStatementImpl
+		 * @see behaviour.impl.BehaviourPackageImpl#getReadLineStatement()
+		 * @generated
+		 */
+		EClass READ_LINE_STATEMENT = eINSTANCE.getReadLineStatement();
 
 	}
 

@@ -204,6 +204,16 @@ public class LoopStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(BehaviourPackage.Literals.LOOP_STATEMENT__LOOP_BODY_STATEMENTS,
 				 BehaviourFactory.eINSTANCE.createExceptionStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.LOOP_STATEMENT__LOOP_BODY_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createWriteLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.LOOP_STATEMENT__LOOP_BODY_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createReadLineStatement()));
 	}
 
 }

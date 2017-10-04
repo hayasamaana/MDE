@@ -177,6 +177,16 @@ public class TryCatchStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(BehaviourPackage.Literals.TRY_CATCH_STATEMENT__TRY_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createWriteLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.TRY_CATCH_STATEMENT__TRY_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createReadLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(BehaviourPackage.Literals.TRY_CATCH_STATEMENT__CATCH_STATEMENTS,
 				 BehaviourFactory.eINSTANCE.createCondionalStatement()));
 
@@ -214,6 +224,16 @@ public class TryCatchStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(BehaviourPackage.Literals.TRY_CATCH_STATEMENT__CATCH_STATEMENTS,
 				 BehaviourFactory.eINSTANCE.createExceptionStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.TRY_CATCH_STATEMENT__CATCH_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createWriteLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.TRY_CATCH_STATEMENT__CATCH_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createReadLineStatement()));
 	}
 
 	/**

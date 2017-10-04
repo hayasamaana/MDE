@@ -19,6 +19,10 @@ import behaviour.Expression
 import behaviour.Literal
 import behaviour.ReadLine
 import behaviour.BinaryExpression
+import behaviour.WriteLineStatement
+import behaviour.ReadLineStatement
+import java.io.BufferedReader
+import java.io.InputStreamReader
 
 class ToJava  extends ToAnyLanguage{
 	
@@ -43,7 +47,6 @@ class ToJava  extends ToAnyLanguage{
 			«FOR m: c.methods»
 			   «m.genCode»
 			«ENDFOR»
-			
 			
 			
 		}
@@ -150,6 +153,45 @@ class ToJava  extends ToAnyLanguage{
 		
 		
 	}
+	def String genCode(LoopStatement loop) {
+		'''while(«loop.loopExpression.genCode»){
+			«FOR stmt:loop.loopBodyStatements»
+			«stmt.genCode»	
+			«ENDFOR»
+		}'''
+		
+	}
+	
+	def String genCode(CallFunctionStatement calfunc) {
+		var s=""
+		if(calfunc instanceof WriteLineStatement){
+		s+=	
+		'''java.lang.System.out.println(«calfunc.arguments.argList»)'''
+			
+		}
+		else if(calfunc instanceof ReadLineStatement){
+			new BufferedReader(new InputStreamReader(java.lang.System.in)).readLine();	
+		}
+		else{
+			s+=
+			'''«calfunc.nameFunc»(«calfunc.arguments.argList»)'''
+			
+		}
+		s
+	}
+	
+	def void getArgList(EList<Expression> expList){
+	
+		var s=""
+		for (var i=0; i<expList.size-1;i++) {
+			s+='''«expList.get(i).genCode»'''	
+		}
+		if(expList.size>0){ 
+		 s+='''«expList.get(expList.size-1).genCode»'''  
+		}	
+	//s=s
+	}
+	
 	
 	def String genCode(Expression exp) {
 		if(exp instanceof Literal){
@@ -170,7 +212,7 @@ class ToJava  extends ToAnyLanguage{
 	}
 	
     def String genCode(Literal lit) {
-    	 ''' return «lit.vlaue»''';
+    	 '''«lit.vlaue»''';
 	
      }
 	

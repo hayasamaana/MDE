@@ -21,11 +21,13 @@ import behaviour.Literal;
 import behaviour.LoopStatement;
 import behaviour.Plus;
 import behaviour.ReadLine;
+import behaviour.ReadLineStatement;
 import behaviour.ReturnStatement;
 import behaviour.Statement;
 import behaviour.TryCatchStatement;
 import behaviour.Variable;
 
+import behaviour.WriteLineStatement;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -186,6 +188,20 @@ public class BehaviourPackageImpl extends EPackageImpl implements BehaviourPacka
 	 * @generated
 	 */
 	private EClass equalsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass writeLineStatementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass readLineStatementEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -676,6 +692,24 @@ public class BehaviourPackageImpl extends EPackageImpl implements BehaviourPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getWriteLineStatement() {
+		return writeLineStatementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getReadLineStatement() {
+		return readLineStatementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public BehaviourFactory getBehaviourFactory() {
 		return (BehaviourFactory)getEFactoryInstance();
 	}
@@ -766,6 +800,10 @@ public class BehaviourPackageImpl extends EPackageImpl implements BehaviourPacka
 		plusEClass = createEClass(PLUS);
 
 		equalsEClass = createEClass(EQUALS);
+
+		writeLineStatementEClass = createEClass(WRITE_LINE_STATEMENT);
+
+		readLineStatementEClass = createEClass(READ_LINE_STATEMENT);
 	}
 
 	/**
@@ -813,6 +851,8 @@ public class BehaviourPackageImpl extends EPackageImpl implements BehaviourPacka
 		comparisonOperatorEClass.getESuperTypes().add(this.getBinaryExpression());
 		plusEClass.getESuperTypes().add(this.getArithmeticOperation());
 		equalsEClass.getESuperTypes().add(this.getComparisonOperator());
+		writeLineStatementEClass.getESuperTypes().add(this.getCallFunctionStatement());
+		readLineStatementEClass.getESuperTypes().add(this.getCallFunctionStatement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(behaviourEClass, Behaviour.class, "Behaviour", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -882,6 +922,10 @@ public class BehaviourPackageImpl extends EPackageImpl implements BehaviourPacka
 		initEClass(plusEClass, Plus.class, "Plus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(equalsEClass, Equals.class, "Equals", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(writeLineStatementEClass, WriteLineStatement.class, "WriteLineStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(readLineStatementEClass, ReadLineStatement.class, "ReadLineStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -179,6 +179,16 @@ public class CondionalStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(BehaviourPackage.Literals.CONDIONAL_STATEMENT__IF_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createWriteLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.CONDIONAL_STATEMENT__IF_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createReadLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(BehaviourPackage.Literals.CONDIONAL_STATEMENT__ELSE_STATEMENTS,
 				 BehaviourFactory.eINSTANCE.createCondionalStatement()));
 
@@ -216,6 +226,16 @@ public class CondionalStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(BehaviourPackage.Literals.CONDIONAL_STATEMENT__ELSE_STATEMENTS,
 				 BehaviourFactory.eINSTANCE.createExceptionStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.CONDIONAL_STATEMENT__ELSE_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createWriteLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.CONDIONAL_STATEMENT__ELSE_STATEMENTS,
+				 BehaviourFactory.eINSTANCE.createReadLineStatement()));
 
 		newChildDescriptors.add
 			(createChildParameter

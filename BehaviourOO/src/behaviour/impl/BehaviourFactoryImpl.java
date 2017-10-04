@@ -72,6 +72,8 @@ public class BehaviourFactoryImpl extends EFactoryImpl implements BehaviourFacto
 			case BehaviourPackage.READ_LINE: return createReadLine();
 			case BehaviourPackage.PLUS: return createPlus();
 			case BehaviourPackage.EQUALS: return createEquals();
+			case BehaviourPackage.WRITE_LINE_STATEMENT: return createWriteLineStatement();
+			case BehaviourPackage.READ_LINE_STATEMENT: return createReadLineStatement();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -235,6 +237,26 @@ public class BehaviourFactoryImpl extends EFactoryImpl implements BehaviourFacto
 	public Equals createEquals() {
 		EqualsImpl equals = new EqualsImpl();
 		return equals;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WriteLineStatement createWriteLineStatement() {
+		WriteLineStatementImpl writeLineStatement = new WriteLineStatementImpl();
+		return writeLineStatement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReadLineStatement createReadLineStatement() {
+		ReadLineStatementImpl readLineStatement = new ReadLineStatementImpl();
+		return readLineStatement;
 	}
 
 	/**

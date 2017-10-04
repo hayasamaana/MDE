@@ -218,6 +218,16 @@ public class FunctionItemProvider
 			(createChildParameter
 				(BehaviourPackage.Literals.FUNCTION__FUNCTION_BODY,
 				 BehaviourFactory.eINSTANCE.createExceptionStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.FUNCTION__FUNCTION_BODY,
+				 BehaviourFactory.eINSTANCE.createWriteLineStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BehaviourPackage.Literals.FUNCTION__FUNCTION_BODY,
+				 BehaviourFactory.eINSTANCE.createReadLineStatement()));
 	}
 
 	/**

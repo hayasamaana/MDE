@@ -88,4 +88,6 @@
       eSuperTypes="#//BinaryExpression"/>
   <eClassifiers xsi:type="ecore:EClass" name="Plus" eSuperTypes="#//ArithmeticOperation"/>
   <eClassifiers xsi:type="ecore:EClass" name="Equals" eSuperTypes="#//ComparisonOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WriteLineStatement" eSuperTypes="#//CallFunctionStatement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReadLineStatement" eSuperTypes="#//CallFunctionStatement"/>
 </ecore:EPackage>

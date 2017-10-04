@@ -66,5 +66,7 @@
     <genClasses image="false" ecoreClass="behaviour.ecore#//ComparisonOperator"/>
     <genClasses ecoreClass="behaviour.ecore#//Plus"/>
     <genClasses ecoreClass="behaviour.ecore#//Equals"/>
+    <genClasses ecoreClass="behaviour.ecore#//WriteLineStatement"/>
+    <genClasses ecoreClass="behaviour.ecore#//ReadLineStatement"/>
   </genPackages>
 </genmodel:GenModel>
