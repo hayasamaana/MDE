@@ -9,5 +9,11 @@
     <functionBody xsi:type="behaviour:ReturnStatement">
       <returnExpression xsi:type="behaviour:Literal" vlaue="35"/>
     </functionBody>
+    <functionBody xsi:type="behaviour:LoopStatement">
+      <loopExpression xsi:type="behaviour:Literal" vlaue="7"/>
+      <loopBodyStatements xsi:type="behaviour:ReturnStatement">
+        <returnExpression xsi:type="behaviour:Literal" vlaue="23"/>
+      </loopBodyStatements>
+    </functionBody>
   </functions>
 </behaviour:Behaviour>
